@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="01_Assmebly">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00014461 -1.8043E-05 0.049482"
+        rpy="0 0 0" />
+      <mass
+        value="0.16646" />
+      <inertia
+        ixx="0.0001335"
+        ixy="-5.3356E-07"
+        ixz="-3.382E-08"
+        iyy="0.0001317"
+        iyz="2.5679E-08"
+        izz="0.00023102" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.67843 0.7098 0.74118 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="0.010457 -0.0071647 -0.026909"
+        rpy="0 0 0" />
+      <mass
+        value="0.1759" />
+      <inertia
+        ixx="0.00013359"
+        ixy="3.0671E-05"
+        ixz="1.8683E-05"
+        iyy="0.0001313"
+        iyz="-1.0373E-05"
+        izz="0.0001518" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.67843 0.7098 0.74118 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0.0231 -0.114 -0.042447"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="-0.0074948 0.042767 0.018396"
+        rpy="0 0 0" />
+      <mass
+        value="0.083694" />
+      <inertia
+        ixx="0.00014302"
+        ixy="2.6053E-05"
+        ixz="2.193E-07"
+        iyy="3.0551E-05"
+        iyz="-2.516E-06"
+        izz="0.00016565" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.67843 0.7098 0.74118 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="-0.0236685921502207 0.00116363796541375 -0.0168445546960661"
+        rpy="0 0 0" />
+      <mass
+        value="0.240348692748409" />
+      <inertia
+        ixx="0.000127784426994455"
+        ixy="-1.77629693150947E-05"
+        ixz="4.82574240821945E-08"
+        iyy="0.00023573554999545"
+        iyz="2.2865471105928E-06"
+        izz="0.00027395279417446" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.67843137254902 0.709803921568627 0.741176470588235 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="-0.018892 0.088122 0"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-0.0997490730525139 -0.0556431005221358 -0.0331649814676584"
+        rpy="0 0 0" />
+      <mass
+        value="0.0591633112828524" />
+      <inertia
+        ixx="1.4903642006037E-05"
+        ixy="2.28363845493227E-07"
+        ixz="2.98813982063749E-07"
+        iyy="1.60870599245254E-05"
+        iyz="-8.4641961680896E-09"
+        izz="1.19517597533343E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.674509803921569 0.709803921568627 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="0 0 0.01738"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="0.0403196363478858 -8.19204275179508E-05 -0.0176083495656006"
+        rpy="0 0 0" />
+      <mass
+        value="0.0560849096369988" />
+      <inertia
+        ixx="1.55230208563576E-05"
+        ixy="-1.80994084880858E-08"
+        ixz="7.61543555247556E-06"
+        iyy="4.47099332837508E-05"
+        iyz="9.17858703700058E-08"
+        izz="3.83278886098176E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.674509803921569 0.709803921568627 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="revolute">
+    <origin
+      xyz="-0.10401 -0.055648 -0.0065"
+      rpy="0 0 1.5708" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="-1.38777878078145E-17 -2.77555756156289E-17 -0.0148821982557494"
+        rpy="0 0 0" />
+      <mass
+        value="0.0199339940588576" />
+      <inertia
+        ixx="1.51975260592915E-06"
+        ixy="3.76739928966337E-22"
+        ixz="7.68632322346539E-22"
+        iyy="2.75512900251088E-06"
+        iyz="9.35130134039985E-22"
+        izz="3.62279477081043E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.67843137254902 0.709803921568627 0.741176470588235 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="revolute">
+    <origin
+      xyz="0.08 0 -0.031522"
+      rpy="3.1416 1.5708 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_8">
+    <inertial>
+      <origin
+        xyz="0.0130945183288441 0.0105937765867405 0.00640254230427876"
+        rpy="0 0 0" />
+      <mass
+        value="0.00745148403121007" />
+      <inertia
+        ixx="4.01180230013812E-07"
+        ixy="-2.82449753756031E-13"
+        ixz="-1.04734411938485E-07"
+        iyy="7.27410729142149E-07"
+        iyz="-6.06912283411358E-14"
+        izz="8.6735132042682E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.67843137254902 0.709803921568627 0.741176470588235 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_8"
+    type="prismatic">
+    <origin
+      xyz="0.00018 -0.010594 -0.051243"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="link_6" />
+    <child
+      link="link_8" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_9">
+    <inertial>
+      <origin
+        xyz="0.0130945183288441 -0.0105937765867405 -0.00640254230427879"
+        rpy="0 0 0" />
+      <mass
+        value="0.00745148403121007" />
+      <inertia
+        ixx="4.01180230013812E-07"
+        ixy="2.82449752489816E-13"
+        ixz="1.04734411938485E-07"
+        iyy="7.2741072914215E-07"
+        iyz="-6.06912283318734E-14"
+        izz="8.67351320426821E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.67843137254902 0.709803921568627 0.741176470588235 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://01_Assmebly/meshes/link_9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_9"
+    type="prismatic">
+    <origin
+      xyz="0.00018 0.010594 -0.051243"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="link_6" />
+    <child
+      link="link_9" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
